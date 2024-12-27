@@ -3,6 +3,7 @@
   --red-color: #dc3b5a;
   --white-color: #ffffff;
   --text-color: #1e1e1e;
+  --bg-botton: rgba(30, 30, 30, 0.1);
 }
 
 @font-face {
@@ -129,6 +130,7 @@ body {
   max-width: 1280px;
   height: 100vh;
   margin: 0 auto;
+  background-color: var(--black-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
