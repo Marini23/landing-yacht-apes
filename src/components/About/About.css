@@ -62,3 +62,151 @@
   font-family: "MessinaSansMonoSemiBold";
   text-align: center;
 }
+
+.image-ape {
+  position: absolute;
+  top: 148px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-mint {
+  width: 216px;
+  height: 41px;
+  position: absolute;
+  top: 428px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-button);
+  border-radius: 8px;
+  border: none;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-family: "RightGroteskCompactBlack";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+
+  &:hover {
+    color: var(--white-color);
+  }
+  &:focus {
+    color: var(--active-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-container {
+    border-radius: 16px;
+    height: 421px;
+    max-width: 736px;
+  }
+  .text-question {
+    top: 124px;
+    left: 72px;
+    transform: none;
+    width: 159px;
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .title {
+    top: 157px;
+    width: 591px;
+    font-size: 92px;
+    line-height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-info {
+    top: 265px;
+    left: 72px;
+    transform: none;
+    width: 203px;
+    font-size: 20px;
+    line-height: 33px;
+  }
+  .text-description {
+    top: 273px;
+    left: 474px;
+    transform: none;
+    width: 190px;
+    text-align: justify;
+    text-indent: 80px;
+  }
+
+  .image-ape {
+    position: absolute;
+    top: 35px;
+    left: 206px;
+    transform: none;
+  }
+
+  .btn-mint {
+    width: 190px;
+    top: 345px;
+    left: 474px;
+    transform: none;
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner-container {
+    border-radius: 24px;
+    height: 677px;
+    max-width: 1408px;
+  }
+  .text-question {
+    top: 197px;
+    left: 195px;
+    width: 190px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .title {
+    top: 253px;
+    width: 1019px;
+    font-size: 164px;
+    line-height: 164px;
+  }
+
+  .text-info {
+    top: 431px;
+    left: 315px;
+    width: 243px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .text-description {
+    top: 441px;
+    left: 879px;
+    transform: none;
+    width: 337px;
+    text-indent: 50px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .image-ape {
+    position: absolute;
+    top: 65px;
+    left: 445px;
+  }
+
+  .btn-mint {
+    width: 337px;
+    height: 70px;
+    top: 526px;
+    left: 879px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

@@ -5,3 +5,19 @@
   margin: 0 auto;
   padding: 54px 8px 24px 8px;
 }
+
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1440px;
+    padding-top: 16px;
+  }
+}
