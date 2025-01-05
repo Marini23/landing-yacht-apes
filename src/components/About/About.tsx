@@ -7,7 +7,7 @@ export const About: React.FC = () => {
   const { width } = useWindowSize();
   return (
     <>
-      <Banner widthScreen={width} />
+      <Banner />
       <Info widthScreen={width} />
       <RunningLine />
     </>

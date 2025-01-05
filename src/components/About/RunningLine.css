@@ -11,9 +11,10 @@
     align-items: center;
     gap: 24px;
     overflow: hidden;
-    width: 957px;
+    width: 982px;
     height: 52px;
     transform: translate(100%, 0);
+    padding: 0 0 0 24px;
 
     p {
       font-size: 36px;
@@ -61,7 +62,8 @@
     height: 86px;
     div {
       height: 86px;
-      width: 1582px;
+      width: 1618px;
+      padding-left: 36px;
       p {
         font-size: 50px;
         line-height: 50px;

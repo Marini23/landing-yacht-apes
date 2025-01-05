@@ -3,14 +3,12 @@
   min-width: 360px;
   max-width: 480px;
   margin: 0 auto;
-  padding: 54px 8px 24px 8px;
+  padding: 54px 0 24px 0;
 }
 
 @media (min-width: 768px) {
   .main-container {
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
     margin-bottom: 40px;
   }
 }

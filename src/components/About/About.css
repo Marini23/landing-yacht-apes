@@ -1,5 +1,10 @@
 /* Banner section */
 
+.banner-wrap {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .banner-container {
   position: relative;
   background-color: var(--red-color);
@@ -104,7 +109,7 @@
 .info-section {
   display: flex;
   flex-direction: column;
-  padding: 0 64px;
+  padding: 0 72px;
   margin-top: 60px;
   gap: 36px;
 }
@@ -159,6 +164,11 @@
 }
 
 @media (min-width: 768px) {
+  .banner-wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .banner-container {
     border-radius: 16px;
     height: 421px;
@@ -216,7 +226,7 @@
   }
   .info-section {
     height: 536px;
-    padding: 0 72px;
+    padding: 0 88px;
     margin-top: 80px;
     gap: 10px;
     position: relative;
@@ -239,7 +249,7 @@
     width: 269px;
     position: absolute;
     top: 368px;
-    left: 72px;
+    left: 88px;
   }
 
   .span-info-text-two {
@@ -251,7 +261,7 @@
   .picture-ape {
     position: absolute;
     top: 114px;
-    right: 72px;
+    right: 88px;
   }
 }
 
