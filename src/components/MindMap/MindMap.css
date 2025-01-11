@@ -1,5 +1,7 @@
 .mind-map-section {
+  height: 354px;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .mind-map-title {
@@ -86,5 +88,67 @@
   }
   &:focus {
     color: var(--red-color);
+  }
+}
+
+.swiper-button-prev {
+  width: 48px;
+  height: 24px;
+  position: static;
+  margin-top: 24px;
+  margin-left: 105px;
+  &:hover {
+    color: var(--red-color);
+  }
+  &:focus {
+    color: var(--red-color);
+  }
+}
+
+.swiper-button-prev::after {
+  content: "Prev";
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "BiroScriptUSPlusBold";
+}
+
+.swiper-button-next {
+  width: 54px;
+  height: 24px;
+  top: 288px;
+  left: 201px;
+}
+
+.swiper-button-next::after {
+  content: "Next";
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "BiroScriptUSPlusBold";
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.65;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-prev:focus::after {
+  color: var(--red-color);
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-next:focus::after {
+  color: var(--red-color);
+}
+
+@media (min-width: 768px) {
+  .mind-map-title {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
   }
 }
