@@ -66,7 +66,7 @@ export const MindMap: React.FC<MindMapProps> = ({ widthScreen }) => {
       ) : (
         <section className="mind-map-section">
           <h2 className="mind-map-title">MIND MAP</h2>
-          <div>
+          <div className="mind-map-list">
             <div className="mind-map-item">
               <p className="mind-map-item-text">
                 All owners of APE NFTs and all future collections will receive a
@@ -101,14 +101,6 @@ export const MindMap: React.FC<MindMapProps> = ({ widthScreen }) => {
                 IN MIND MAP
               </h3>
             </a>
-          </div>
-          <div className="btn-section">
-            <button type="button" className="btn-slider">
-              Prev
-            </button>
-            <button type="button" className="btn-slider">
-              Next
-            </button>
           </div>
         </section>
       )}
