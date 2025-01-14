@@ -1,0 +1,89 @@
+.faq-section {
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 44px;
+  font-family: "RightGroteskCompactBlack";
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.faq-list {
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.faq-item {
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+}
+
+.faq-item-open {
+  background-color: var(--text-color);
+  border-radius: 12px;
+}
+
+.faq-item-content {
+  width: 169px;
+}
+
+.faq-item-title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 20px;
+  font-family: "RightGroteskCompactBlack";
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.faq-item:hover .faq-item-title {
+  color: var(--red-color);
+}
+
+.faq-item:focus .faq-item-title {
+  color: var(--red-color);
+}
+
+.faq-item-title-open {
+  color: var(--red-color);
+}
+.faq-item-number {
+  width: 27px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--red-color);
+  font-family: "BiroScriptPlusBold";
+}
+
+.faq-item:hover .faq-item-number {
+  color: var(--white-color);
+}
+.faq-item:focus .faq-item-number {
+  color: var(--white-color);
+}
+
+.faq-item-number-open {
+  color: var(--white-color);
+}
+
+.faq-item-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--white-color);
+  text-transform: uppercase;
+}
