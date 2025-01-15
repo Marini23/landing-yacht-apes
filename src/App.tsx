@@ -10,7 +10,7 @@ function App() {
     <main className="main-container">
       <About widthScreen={width} />
       <MindMap widthScreen={width} />
-      <FAQ />
+      <FAQ widthScreen={width} />
     </main>
   );
 }

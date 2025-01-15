@@ -1,5 +1,6 @@
 .faq-section {
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .faq-title {
@@ -24,12 +25,13 @@
   cursor: pointer;
   display: flex;
   gap: 4px;
-  padding: 8px;
+  padding: 0 8px;
 }
 
 .faq-item-open {
   background-color: var(--text-color);
   border-radius: 12px;
+  padding: 8px;
 }
 
 .faq-item-content {
@@ -43,7 +45,6 @@
   font-family: "RightGroteskCompactBlack";
   color: var(--white-color);
   text-align: center;
-  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -57,6 +58,7 @@
 
 .faq-item-title-open {
   color: var(--red-color);
+  margin-bottom: 10px;
 }
 .faq-item-number {
   width: 27px;
@@ -86,4 +88,130 @@
   font-family: "MessinaSansMonoBook";
   color: var(--white-color);
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .faq-section {
+    margin-bottom: 80px;
+  }
+
+  .faq-title {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 48px;
+  }
+
+  .faq-list {
+    width: 592px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 18px;
+  }
+
+  .faq-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 0 16px;
+    position: relative;
+  }
+
+  .faq-item-open {
+    border-radius: 16px;
+    padding: 18px 16px 23px 16px;
+  }
+
+  .faq-item-content {
+    width: 339px;
+  }
+
+  .faq-item-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .faq-item-title-open {
+    margin-bottom: 12px;
+  }
+
+  .faq-item-number {
+    width: 35px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .faq-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 148px;
+    height: 182px;
+    border-radius: 16px;
+    transform: rotate(-16deg);
+  }
+}
+
+@media (min-width: 1440px) {
+  .faq-section {
+    margin-bottom: 12px;
+  }
+
+  .faq-title {
+    font-size: 160px;
+    line-height: 160px;
+    margin-bottom: 80px;
+  }
+
+  .faq-list {
+    width: 1035px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 48px;
+  }
+
+  .faq-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    gap: 26px;
+    padding: 0 24px;
+    position: relative;
+  }
+
+  .faq-item-open {
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  .faq-item-content {
+    width: 635px;
+  }
+
+  .faq-item-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .faq-item-title-open {
+    margin-bottom: 36px;
+  }
+
+  .faq-item-number {
+    width: 52px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .faq-item-image {
+    width: 248px;
+    height: 282px;
+    border-radius: 24px;
+    transform: rotate(-8deg);
+  }
+
+  .faq-item-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

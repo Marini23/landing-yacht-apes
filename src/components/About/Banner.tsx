@@ -6,11 +6,7 @@ import ApeTablet_2x from "../../assets/main-ape-1-tablet-2x.png";
 import ApeDesktop_1x from "../../assets/main-ape-1-desktop-1x.png";
 import ApeDesktop_2x from "../../assets/main-ape-1-desktop-2x.png";
 
-
-
 export const Banner: React.FC = () => {
-
-
   return (
     <div className="banner-wrap">
       <section className="banner-container">
@@ -19,7 +15,6 @@ export const Banner: React.FC = () => {
           <span>YACHT</span> <span>APES</span>
         </h1>
         <p className="text-info">Apes aRe eveRywhere</p>
-        {/* <img src={apeImage} alt="ape" className="image-ape" /> */}
         <picture className="image-ape">
           <source
             srcSet={`${ApeMobile_1x}, ${ApeMobile_2x} 2x`}
