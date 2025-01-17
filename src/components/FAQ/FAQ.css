@@ -22,6 +22,7 @@
 }
 
 .faq-item {
+  position: relative;
   cursor: pointer;
   display: flex;
   gap: 4px;
@@ -88,6 +89,30 @@
   font-family: "MessinaSansMonoBook";
   color: var(--white-color);
   text-transform: uppercase;
+  position: relative;
+  opacity: 0;
+  top: -10px;
+  left: 0;
+  animation: slideDown ease 1s forwards 0.6s;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -115,7 +140,6 @@
     justify-content: end;
     gap: 20px;
     padding: 0 16px;
-    position: relative;
   }
 
   .faq-item-open {
@@ -149,6 +173,7 @@
     height: 182px;
     border-radius: 16px;
     transform: rotate(-16deg);
+    animation: 2s slide-right;
   }
 }
 
