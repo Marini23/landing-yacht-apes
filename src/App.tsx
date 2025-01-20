@@ -3,6 +3,7 @@ import "./App.css";
 import { About } from "./components/About/About";
 import { MindMap } from "./components/MindMap/MindMap";
 import { FAQ } from "./components/FAQ/FAQ";
+import { Collection } from "./components/Collection/Collection";
 
 function App() {
   const { width } = useWindowSize();
@@ -11,6 +12,7 @@ function App() {
       <About widthScreen={width} />
       <MindMap widthScreen={width} />
       <FAQ widthScreen={width} />
+      <Collection />
     </main>
   );
 }

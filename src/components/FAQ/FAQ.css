@@ -93,7 +93,7 @@
   opacity: 0;
   top: -10px;
   left: 0;
-  animation: slideDown ease 1s forwards 0.6s;
+  animation: slideDown ease 0.5s forwards 0.6s;
 }
 
 @keyframes slideDown {
