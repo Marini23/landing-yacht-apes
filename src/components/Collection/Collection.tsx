@@ -34,7 +34,15 @@ export const Collection: React.FC = () => {
         modules={[Navigation]}
         navigation={true}
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={24}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1440: {
+            slidesPerView: 4,
+          },
+        }}
       >
         <SwiperSlide>
           <img
