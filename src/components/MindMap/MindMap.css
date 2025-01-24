@@ -1,5 +1,6 @@
 .mind-map-section {
-  height: 354px;
+  width: 216px;
+  margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -129,8 +130,8 @@
 
 @media (min-width: 768px) {
   .mind-map-section {
-    height: 100%;
-    padding: 0 88px;
+    width: 592px;
+    padding: 0;
     margin-top: 80px;
     margin-bottom: 80px;
   }
@@ -160,7 +161,7 @@
 
 @media (min-width: 1440px) {
   .mind-map-section {
-    padding: 0 204px;
+    width: 1032px;
     margin-top: 120px;
     margin-bottom: 120px;
   }
