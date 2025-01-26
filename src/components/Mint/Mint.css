@@ -1,0 +1,101 @@
+.mint-section {
+  width: 216px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 44px;
+  font-family: "RightGroteskCompactBlack";
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.mint-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-container {
+  height: 48px;
+  display: flex;
+}
+.label-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--text-color);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.mint-input {
+  cursor: pointer;
+  width: 168px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  padding-left: 24px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--white-color);
+  &:hover {
+    border: 1px solid var(--white-color);
+  }
+  &:focus {
+    border: 1px solid var(--white-color);
+    outline: none;
+  }
+}
+input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.mint-button {
+  height: 41px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--red-color);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+  font-family: "RightGroteskCompactBlack";
+  color: var(--white-color);
+  &:hover {
+    color: var(--text-color);
+  }
+}
