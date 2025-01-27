@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .mint-title {
@@ -32,11 +33,17 @@
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
+  margin: 0 auto;
+}
+.input-section {
+  width: 216px;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-container {
-  height: 48px;
+  width: 216px;
   display: flex;
 }
 .label-icon {
@@ -72,7 +79,20 @@
     outline: none;
   }
 }
-input::placeholder {
+
+.input-error {
+  border: 1px solid var(--red-color);
+  color: var(--red-color);
+  &:hover {
+    border: 1px solid var(--red-color);
+  }
+  &:focus {
+    border: 1px solid var(--red-color);
+    outline: none;
+  }
+}
+
+.mint-input::placeholder {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -81,7 +101,22 @@ input::placeholder {
   text-transform: uppercase;
 }
 
+.input-error::placeholder {
+  color: var(--red-color);
+}
+
+.error-message {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--red-color);
+  text-transform: uppercase;
+  text-align: right;
+}
+
 .mint-button {
+  width: 216px;
   height: 41px;
   border: none;
   border-radius: 8px;
@@ -97,5 +132,102 @@ input::placeholder {
   color: var(--white-color);
   &:hover {
     color: var(--text-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .mint-section {
+    width: 397px;
+    margin-bottom: 80px;
+  }
+
+  .mint-title {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+
+  .mint-text {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .form-wrapper {
+    width: 248px;
+  }
+
+  .input-section {
+    width: 248px;
+  }
+
+  .input-container {
+    width: 248px;
+  }
+
+  .mint-input {
+    width: 200px;
+  }
+
+  .mint-button {
+    width: 247px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mint-section {
+    width: 745px;
+    margin-bottom: 120px;
+  }
+
+  .mint-title {
+    font-size: 160px;
+    line-height: 160px;
+    margin-bottom: 80px;
+  }
+
+  .mint-text {
+    width: 581px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .form-wrapper {
+    width: 397px;
+    gap: 48px;
+  }
+
+  .input-section {
+    width: 397px;
+  }
+
+  .input-container {
+    width: 397px;
+  }
+
+  .label-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .mint-input {
+    width: 333px;
+    height: 64px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  input::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .mint-button {
+    width: 397px;
+    height: 70px;
+    font-size: 28px;
+    line-height: 34px;
   }
 }
