@@ -224,6 +224,11 @@
     line-height: 19px;
   }
 
+  .error-message {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   .mint-button {
     width: 397px;
     height: 70px;

@@ -3,6 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "./Mint.css";
 import { Icon } from "../Icon";
+import { useState } from "react";
 
 const querySchema = yup.object({
   userName: yup
@@ -13,7 +14,7 @@ const querySchema = yup.object({
   walletAddress: yup
     .string()
     .required("Is required")
-    .length(18, "Wallet address must be exactly 18 characters long") // Exactly 18 characters
+    .length(8, "Wallet address must be exactly 8 characters long") // Exactly 18 characters
     .matches(
       /^[a-zA-Z0-9]*$/,
       "Wallet address must include only letters and numbers"
@@ -27,6 +28,7 @@ interface MintProps {
 }
 
 export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
+  const [buttonText, setButtonText] = useState<string>("MINT");
   let iconSize: number = 24;
   if (widthScreen >= 1440) {
     iconSize = 36;
@@ -35,6 +37,7 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<QuerySchemaType>({
     resolver: yupResolver(querySchema),
@@ -42,6 +45,15 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
 
   const onSubmit = (data: QuerySchemaType) => {
     console.log("Validated Data:", data);
+    setButtonText("MINTED");
+    setTimeout(() => {
+      setButtonText("MINT");
+      reset();
+    }, 3000);
+  };
+
+  const onError = () => {
+    setButtonText("ERROR");
   };
 
   return (
@@ -52,7 +64,7 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
         Join the YACHT APE community to be one of the first to receive our
         limited edition NFT
       </p>
-      <form onSubmit={handleSubmit(onSubmit)} className="form-wrapper">
+      <form onSubmit={handleSubmit(onSubmit, onError)} className="form-wrapper">
         <div className="input-section">
           <div className="input-container">
             <label className="label-icon">
@@ -94,7 +106,7 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
           }}
           className="mint-button"
         >
-          MINT
+          {buttonText}
         </button>
       </form>
     </section>
