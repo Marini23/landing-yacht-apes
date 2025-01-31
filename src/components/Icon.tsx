@@ -2,7 +2,7 @@ import sprite from "../assets/symbol-defs.svg";
 
 interface IconProps {
   name: string;
-  size: number;
+  size?: number;
   className?: string;
   color?: string;
 }

@@ -5,6 +5,7 @@ import ApeTablet_1x from "../../assets/main-ape-1-tablet-1x.png";
 import ApeTablet_2x from "../../assets/main-ape-1-tablet-2x.png";
 import ApeDesktop_1x from "../../assets/main-ape-1-desktop-1x.png";
 import ApeDesktop_2x from "../../assets/main-ape-1-desktop-2x.png";
+import { Icon } from "../Icon";
 
 export const Banner: React.FC = () => {
   return (
@@ -37,6 +38,14 @@ export const Banner: React.FC = () => {
           Yacht Ape is a collection of unique digital apes that you can own in
           NFT format
         </p>
+        <a href="/" className="logo-container">
+          {" "}
+          <Icon
+            name="icon-icon-logo-black"
+            className="logo-icon"
+            color="#1E1E1E"
+          />
+        </a>
       </section>
     </div>
   );

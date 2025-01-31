@@ -5,6 +5,7 @@ import { MindMap } from "./components/MindMap/MindMap";
 import { FAQ } from "./components/FAQ/FAQ";
 import { Collection } from "./components/Collection/Collection";
 import { Mint } from "./components/Mint/Mint";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   const { width } = useWindowSize();
@@ -15,6 +16,7 @@ function App() {
       <FAQ widthScreen={width} />
       <Collection />
       <Mint widthScreen={width} />
+      <Footer />
     </main>
   );
 }

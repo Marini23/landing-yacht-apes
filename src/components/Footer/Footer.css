@@ -1,0 +1,25 @@
+.footer {
+  width: 216px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 273px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    width: 363px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

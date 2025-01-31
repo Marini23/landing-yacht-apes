@@ -46,6 +46,7 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
   const onSubmit = (data: QuerySchemaType) => {
     console.log("Validated Data:", data);
     setButtonText("MINTED");
+    alert("Form sent successfully.");
     setTimeout(() => {
       setButtonText("MINT");
       reset();
@@ -99,13 +100,7 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
             <p className="error-message">{errors.walletAddress.message}</p>
           )}
         </div>
-        <button
-          type="submit"
-          onClick={() => {
-            console.log("submit");
-          }}
-          className="mint-button"
-        >
+        <button type="submit" className="mint-button">
           {buttonText}
         </button>
       </form>
