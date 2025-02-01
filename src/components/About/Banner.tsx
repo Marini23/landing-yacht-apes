@@ -9,7 +9,7 @@ import { Icon } from "../Icon";
 
 export const Banner: React.FC = () => {
   return (
-    <div className="banner-wrap">
+    <div className="banner-wrap" id="about">
       <section className="banner-container">
         <p className="text-question">diD yOu seE iT ?</p>
         <h1 className="title">

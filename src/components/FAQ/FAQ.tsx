@@ -54,7 +54,7 @@ export const FAQ: React.FC<FAQProps> = ({ widthScreen }) => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section className="faq-section">
+    <section className="faq-section" id="faq">
       <h2 className="faq-title">FAQ</h2>
       <ul className="faq-list">
         {faqItems.map((item, index) => (

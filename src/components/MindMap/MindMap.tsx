@@ -14,7 +14,7 @@ export const MindMap: React.FC<MindMapProps> = ({ widthScreen }) => {
   return (
     <>
       {widthScreen < 768 ? (
-        <section className="mind-map-section">
+        <section className="mind-map-section" id="mind-map">
           <h2 className="mind-map-title">MIND MAP</h2>
           <Swiper modules={[Navigation]} navigation={true} slidesPerView={1}>
             <SwiperSlide>
@@ -64,7 +64,7 @@ export const MindMap: React.FC<MindMapProps> = ({ widthScreen }) => {
           </Swiper>
         </section>
       ) : (
-        <section className="mind-map-section">
+        <section className="mind-map-section" id="mind-map">
           <h2 className="mind-map-title">MIND MAP</h2>
           <div className="mind-map-list">
             <div className="mind-map-item">

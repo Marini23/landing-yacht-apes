@@ -28,7 +28,7 @@ import ImageTen_2x from "../../assets/collection-image-10-2x.jpg";
 
 export const Collection: React.FC = () => {
   return (
-    <section className="collection-section">
+    <section className="collection-section" id="arts">
       <h2 className="collection-title">COLLECTION</h2>
       <Swiper
         modules={[Navigation]}

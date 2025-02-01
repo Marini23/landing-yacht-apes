@@ -58,7 +58,7 @@ export const Mint: React.FC<MintProps> = ({ widthScreen }) => {
   };
 
   return (
-    <section className="mint-section">
+    <section className="mint-section" id="mint">
       <h2 className="mint-title">ARE YOU IN?</h2>
       <Icon name="icon-add-sharp" size={iconSize} />
       <p className="mint-text">
