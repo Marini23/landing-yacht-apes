@@ -3,8 +3,9 @@ import "./BurgerMenu.css";
 
 export const BurgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  console.log(isOpen);
   return (
-    <div className="burger-menu-container">
+    <>
       <button
         type="button"
         className="burger-button"
@@ -12,7 +13,7 @@ export const BurgerMenu: React.FC = () => {
       >
         {isOpen ? "CLOSE" : "MENU"}
       </button>
-      {isOpen && (
+      <div className={`menu-list-container ${isOpen ? "open" : ""}`}>
         <ul className="menu-list">
           <li className="menu-item">
             <a href="#about" className="menu-item-link">
@@ -40,7 +41,7 @@ export const BurgerMenu: React.FC = () => {
             </a>
           </li>
         </ul>
-      )}
-    </div>
+      </div>
+    </>
   );
 };

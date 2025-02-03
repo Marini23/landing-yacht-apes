@@ -1,12 +1,7 @@
-.burger-menu-container {
-  display: flex;
-  position: absolute;
+.burger-button {
+  position: fixed;
   top: 62px;
   right: 16px;
-  z-index: 1000;
-}
-
-.burger-button {
   width: 48px;
   height: 48px;
   display: flex;
@@ -21,4 +16,29 @@
   line-height: 14px;
   font-family: "MessinaSansMonoBook";
   color: var(--text-color);
+  z-index: 1000;
+}
+
+.menu-list-container {
+  z-index: 100;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--black-color);
+}
+
+.menu-list-container.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-item-link {
+  color: var(--white-color);
+  text-decoration: none;
 }
