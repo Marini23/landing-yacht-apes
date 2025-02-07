@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 54px 0 24px 0;
   position: relative;
+  height: 100vh;
 }
 
 @media (min-width: 768px) {
