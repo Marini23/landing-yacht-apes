@@ -1,0 +1,41 @@
+.burger-button-menu-red {
+  position: fixed;
+  top: 66px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-button);
+  border-radius: 8px;
+  border: none;
+  backdrop-filter: blur(12px);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--text-color);
+}
+
+.burger-button-menu-black {
+  position: fixed;
+  top: 66px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  backdrop-filter: blur(12px);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  font-family: "MessinaSansMonoBook";
+  color: var(--white-color);
+}
