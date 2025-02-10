@@ -13,9 +13,8 @@ function App() {
   const { width } = useWindowSize();
   return (
     <>
-      {width >= 768 && <BurgerMenuDesktopTablet />}
-      {/* {width < 768 && <BurgerMenuMobile />} */}
       <main className="main-container">
+        {width >= 768 && <BurgerMenuDesktopTablet />}
         {width < 768 && <BurgerMenuMobile />}
         <About widthScreen={width} />
         <MindMap widthScreen={width} />
