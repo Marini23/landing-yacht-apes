@@ -1,24 +1,4 @@
-.burger-button-menu-red {
-  position: fixed;
-  top: 66px;
-  right: calc((100vw - 768px) / 2 + 28px);
-  width: 48px;
-  height: 48px;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-button);
-  border-radius: 8px;
-  border: none;
-  backdrop-filter: blur(12px);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 14px;
-  font-family: "MessinaSansMonoBook";
-  color: var(--text-color);
-}
-
+.burger-button-menu-red,
 .burger-button-menu-black {
   position: fixed;
   top: 66px;
@@ -29,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   border: none;
   backdrop-filter: blur(12px);
@@ -37,7 +16,25 @@
   font-weight: 600;
   line-height: 14px;
   font-family: "MessinaSansMonoBook";
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.burger-button-menu-red {
+  background-color: var(--bg-button);
+  color: var(--text-color);
+  &:hover {
+    color: var(--white-color);
+  }
+}
+
+.burger-button-menu-black {
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
+  &:hover {
+    color: var(--red-color);
+  }
 }
 
 .burger-button-open {
@@ -45,13 +42,13 @@
   border-bottom-left-radius: 0px;
 }
 
-.list-red {
+.list-red,
+.list-black {
   position: fixed;
   top: 66px;
   right: -164px;
   z-index: 99;
   display: flex;
-  background-color: var(--bg-button);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   opacity: 0;
@@ -59,18 +56,18 @@
   transition: right 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
+.list-red {
+  background-color: var(--bg-button);
+  &:hover {
+    color: var(--white-color);
+  }
+}
+
 .list-black {
-  position: fixed;
-  top: 66px;
-  right: -164px;
-  z-index: 99;
-  display: flex;
   background-color: rgba(255, 255, 255, 0.1);
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  opacity: 0;
-  pointer-events: none;
-  transition: right 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  &:hover {
+    color: var(--red-color);
+  }
 }
 
 .list-open {
@@ -79,31 +76,56 @@
   pointer-events: auto;
 }
 
-.list-item {
+.list-item-red,
+.list-item-black {
   cursor: pointer;
   width: 48px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.list-item-red {
+  color: var(--text-color);
+  &:hover {
+    color: var(--white-color);
+  }
+}
+
+.list-item-black {
+  color: var(--text-color);
+  &:hover {
+    color: var(--red-color);
+  }
+}
+
+.list-item-link-red,
+.list-item-link-black {
+  text-decoration: none;
+  font-family: "MessinaSansMonoBook";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
 }
 
 .list-item-link-red {
   color: var(--text-color);
-  text-decoration: none;
-  font-family: "MessinaSansMonoBook";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 14px;
 }
 
 .list-item-link-black {
   color: var(--white-color);
-  text-decoration: none;
-  font-family: "MessinaSansMonoBook";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 14px;
+}
+
+.list-item-red:hover .list-item-link-red {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+.list-item-black:hover .list-item-link-black {
+  color: var(--red-color);
+  text-decoration: underline;
 }
 
 @media (min-width: 1440px) {
@@ -152,7 +174,8 @@
     right: calc((100vw - 1440px) / 2 + 176px);
   }
 
-  .list-item {
+  .list-item-red,
+  .list-item-black {
     width: 80px;
     height: 80px;
   }

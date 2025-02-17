@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <main className="main-container">
-        {width >= 768 && <BurgerMenuDesktopTablet />}
+        {width >= 768 && <BurgerMenuDesktopTablet widthScreen={width} />}
         {width < 768 && <BurgerMenuMobile />}
         <About widthScreen={width} />
         <MindMap widthScreen={width} />
