@@ -178,6 +178,10 @@
 
 .picture-ape {
   font-size: 0;
+  /* width: 216px;
+  height: 292px; */
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
