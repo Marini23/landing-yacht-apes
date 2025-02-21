@@ -26,7 +26,7 @@
 .collection-image {
   width: 216px;
   height: 256px;
-  border-radius: 18px;
+  border-radius: 20px;
 }
 
 .swiper-button-prev {
@@ -37,6 +37,7 @@
   top: 95%;
   transform: translateY(-50%);
   left: 40px;
+  transition: color 0.3s ease-in-out;
   &:hover {
     color: var(--red-color);
   }
@@ -53,6 +54,7 @@
   top: 95%;
   transform: translateY(-50%);
   left: 128px;
+  transition: color 0.3s ease-in-out;
   &:hover {
     color: var(--red-color);
   }
@@ -114,7 +116,7 @@
   .collection-image {
     width: 240px;
     height: 280px;
-    border-radius: 18px;
+    border-radius: 20px;
   }
 
   .swiper-button-prev {

@@ -47,6 +47,7 @@
   color: var(--white-color);
   text-align: center;
   text-align: left;
+  transition: color 0.3s ease-in-out;
 }
 
 .faq-item:hover .faq-item-title {
@@ -60,6 +61,7 @@
 .faq-item-title-open {
   color: var(--red-color);
   margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
 }
 .faq-item-number {
   width: 27px;
@@ -69,6 +71,7 @@
   line-height: 20px;
   color: var(--red-color);
   font-family: "BiroScriptPlusBold";
+  transition: color 0.3s ease-in-out;
 }
 
 .faq-item:hover .faq-item-number {
@@ -173,7 +176,7 @@
     height: 182px;
     border-radius: 16px;
     transform: rotate(-16deg);
-    animation: 2s slide-right;
+    animation: slide-right 2s ease forwards;
   }
 }
 

@@ -31,9 +31,11 @@ export const Banner: React.FC = () => {
           />
           <img src={ApeMobile_1x} alt="illustration ape" />
         </picture>
-        <button type="button" className="btn-mint">
-          MEET APES
-        </button>
+        <a href="#mint">
+          <button type="button" className="btn-mint">
+            MEET APES
+          </button>
+        </a>
         <p className="text-description">
           Yacht Ape is a collection of unique digital apes that you can own in
           NFT format

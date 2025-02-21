@@ -71,6 +71,7 @@
   line-height: 14px;
   font-family: "MessinaSansMonoBook";
   color: var(--white-color);
+  transition: border 0.3s ease-in-out;
   &:hover {
     border: 1px solid var(--white-color);
   }
@@ -83,6 +84,7 @@
 .input-error {
   border: 1px solid var(--red-color);
   color: var(--red-color);
+  transition: border 0.3s ease-in-out;
   &:hover {
     border: 1px solid var(--red-color);
   }
@@ -130,6 +132,7 @@
   line-height: 19px;
   font-family: "RightGroteskCompactBlack";
   color: var(--white-color);
+  transition: color 0.3s ease-in-out;
   &:hover {
     color: var(--text-color);
   }

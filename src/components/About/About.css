@@ -26,6 +26,7 @@
 .logo-icon {
   width: 48px;
   height: 32px;
+  transition: fill 0.3s ease-in-out; /* Smooth hover transition */
 }
 
 .logo-container:hover .logo-icon {
@@ -112,6 +113,7 @@
   font-size: 16px;
   font-weight: 900;
   line-height: 19px;
+  transition: color 0.3s ease-in-out;
 
   &:hover {
     color: var(--white-color);
@@ -124,6 +126,8 @@
 /* Info section */
 
 .info-section {
+  width: 360px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 0 72px;
@@ -178,13 +182,14 @@
 
 .picture-ape {
   font-size: 0;
-  /* width: 216px;
-  height: 292px; */
   display: flex;
   justify-content: center;
 }
 
 @media (min-width: 768px) {
+  .info-section {
+    width: 768px;
+  }
   .banner-wrap {
     padding-left: 16px;
     padding-right: 16px;
@@ -293,6 +298,9 @@
 }
 
 @media (min-width: 1440px) {
+  .info-section {
+    width: 1440px;
+  }
   .banner-container {
     border-radius: 24px;
     height: 677px;
