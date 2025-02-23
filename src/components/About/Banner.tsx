@@ -6,17 +6,28 @@ import ApeTablet_2x from "../../assets/main-ape-1-tablet-2x.png";
 import ApeDesktop_1x from "../../assets/main-ape-1-desktop-1x.png";
 import ApeDesktop_2x from "../../assets/main-ape-1-desktop-2x.png";
 import { Icon } from "../Icon";
+import {
+  BannerContainer,
+  BannerWrap,
+  BtnMint,
+  ImageApe,
+  LogoContainer,
+  TextDescription,
+  TextInfo,
+  TextQuestion,
+  Title,
+} from "./Banner.styled";
 
 export const Banner: React.FC = () => {
   return (
-    <div className="banner-wrap" id="about">
-      <section className="banner-container">
-        <p className="text-question">diD yOu seE iT ?</p>
-        <h1 className="title">
+    <BannerWrap id="about">
+      <BannerContainer>
+        <TextQuestion>diD yOu seE iT ?</TextQuestion>
+        <Title>
           <span>YACHT</span> <span>APES</span>
-        </h1>
-        <p className="text-info">Apes aRe eveRywhere</p>
-        <picture className="image-ape">
+        </Title>
+        <TextInfo>Apes aRe eveRywhere</TextInfo>
+        <ImageApe>
           <source
             srcSet={`${ApeMobile_1x}, ${ApeMobile_2x} 2x`}
             media="(max-width: 743px)"
@@ -30,25 +41,23 @@ export const Banner: React.FC = () => {
             srcSet={`${ApeDesktop_1x}, ${ApeDesktop_2x} 2x`}
           />
           <img src={ApeMobile_1x} alt="illustration ape" />
-        </picture>
+        </ImageApe>
         <a href="#mint">
-          <button type="button" className="btn-mint">
-            MEET APES
-          </button>
+          <BtnMint type="button">MEET APES</BtnMint>
         </a>
-        <p className="text-description">
+        <TextDescription>
           Yacht Ape is a collection of unique digital apes that you can own in
           NFT format
-        </p>
-        <a href="/" className="logo-container">
+        </TextDescription>
+        <LogoContainer href="/" className="logo-container">
           {" "}
           <Icon
             name="icon-icon-logo-black"
             className="logo-icon"
             color="#1E1E1E"
           />
-        </a>
-      </section>
-    </div>
+        </LogoContainer>
+      </BannerContainer>
+    </BannerWrap>
   );
 };

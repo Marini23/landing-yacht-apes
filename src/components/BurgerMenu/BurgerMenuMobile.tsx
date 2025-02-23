@@ -31,7 +31,7 @@ export const BurgerMenuMobile: React.FC = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <nav>
       <button
         type="button"
         className={` ${isOpen ? "burger-button-open" : "burger-button"}`}
@@ -71,6 +71,6 @@ export const BurgerMenuMobile: React.FC = () => {
         </ul>
         <div className="footer">© Yacht ape 2024 all rights reserved</div>
       </div>
-    </>
+    </nav>
   );
 };

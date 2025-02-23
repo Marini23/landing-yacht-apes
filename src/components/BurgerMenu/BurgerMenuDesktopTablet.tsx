@@ -30,7 +30,7 @@ export const BurgerMenuDesktopTablet: React.FC<
   };
 
   return (
-    <div>
+    <nav>
       <button
         type="button"
         className={` ${
@@ -128,6 +128,6 @@ export const BurgerMenuDesktopTablet: React.FC<
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };

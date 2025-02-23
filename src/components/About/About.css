@@ -1,126 +1,13 @@
 /* Banner section */
 
-.banner-wrap {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.banner-container {
-  position: relative;
-  background-color: var(--red-color);
-  border-radius: 12px;
-  height: 542px;
-  width: 100%;
-  max-width: 464px;
-  margin: 0 auto;
-}
-
-.logo-container {
-  width: 48px;
-  height: 32px;
-  position: absolute;
-  top: 16px;
-  left: 8px;
-}
-
 .logo-icon {
   width: 48px;
   height: 32px;
-  transition: fill 0.3s ease-in-out; /* Smooth hover transition */
+  transition: fill 0.3s ease-in-out;
 }
 
 .logo-container:hover .logo-icon {
   fill: var(--white-color);
-}
-
-.text-question {
-  position: absolute;
-  top: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 127px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  color: var(--text-color);
-  font-family: "BiroScriptUSPlusBold";
-}
-
-.title {
-  position: absolute;
-  top: 63px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 209px;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 44px;
-  color: var(--text-color);
-  font-family: "RightGroteskCompactBlack";
-}
-
-.text-info {
-  position: absolute;
-  top: 115px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 162px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  color: var(--text-color);
-  font-family: "BiroScriptUSPlusBold";
-}
-.text-description {
-  text-transform: uppercase;
-  position: absolute;
-  top: 481px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 217px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  color: var(--text-color);
-  font-family: "MessinaSansMonoSemiBold";
-  text-align: center;
-}
-
-.image-ape {
-  position: absolute;
-  top: 148px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.btn-mint {
-  width: 216px;
-  height: 41px;
-  position: absolute;
-  top: 428px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--bg-button);
-  border-radius: 8px;
-  border: none;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--text-color);
-  font-family: "RightGroteskCompactBlack";
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 19px;
-  transition: color 0.3s ease-in-out;
-
-  &:hover {
-    color: var(--white-color);
-  }
-  &:focus {
-    color: var(--white-color);
-  }
 }
 
 /* Info section */
